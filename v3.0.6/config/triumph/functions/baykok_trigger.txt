@@ -1,3 +1,0 @@
-gamestage add @p baykok
-summon minecraft:fireworks_rocket ~ ~ ~
-say 你已经学习了如何合成箭
