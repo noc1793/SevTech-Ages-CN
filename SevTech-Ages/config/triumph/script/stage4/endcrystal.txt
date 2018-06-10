@@ -1,0 +1,15 @@
+setTitle("化身")
+
+setIcon("minecraft:end_crystal", 0)
+
+setDescription("如果你想复活末影龙,制作4个末影水晶,并把它们放在末地传送门上,每个水晶都需要放在三块基岩的中心.")
+
+setParent("triumph:stage4/solidendereye")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:summoned_entity")
+criteria.setEntityType("minecraft:ender_dragon")
+
+//Rewards
+setRewardExperience(12)

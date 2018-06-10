@@ -1,0 +1,15 @@
+setTitle("Ñ¹ËõÌú¶§")
+
+setIcon("pneumaticcraft:ingot_iron_compressed")
+
+setDescription("ÖÆ×÷Ò»¸öÑ¹ËõÌú¶§")
+
+setParent("triumph:stage4/root")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("pneumaticcraft:ingot_iron_compressed")
+
+//Rewards
+setRewardExperience(12)

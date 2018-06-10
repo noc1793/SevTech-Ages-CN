@@ -1,0 +1,15 @@
+setTitle("海地下的灯")
+
+setIcon("minecraft:sea_lantern", 0)
+
+setDescription("第三层血魔法祭坛可以由海晶灯或萤石制成.在海底神殿找到海晶石或从暮色森林中的黑暗森林迷宫中掉落 ")
+
+setParent("triumph:stage2/root")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("crafted", "minecraft:inventory_changed")
+criteria.setItem("minecraft:sea_lantern", 0)
+
+//Rewards
+setRewardExperience(8)

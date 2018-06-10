@@ -1,0 +1,15 @@
+setTitle("铸造金块")
+
+setIcon("tconstruct:cast_custom", 1)
+
+setDescription("要获得金块铸件,你需要在石砧上创造一块石头块")
+
+setParent("triumph:stage2/gold")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("tconstruct:cast_custom", 1)
+
+//Rewards
+setRewardExperience(8)

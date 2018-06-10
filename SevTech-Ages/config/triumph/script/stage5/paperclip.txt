@@ -1,0 +1,15 @@
+setTitle("万能回形针")
+
+setIcon("pickletweaks:ppm4", 2)
+
+setDescription("创造世界上第一个回形针")
+
+setParent("triumph:stage5/root")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("pickletweaks:ppm4", 2)
+
+//Rewards
+setRewardExperience(15)

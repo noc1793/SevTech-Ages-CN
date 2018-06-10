@@ -1,0 +1,16 @@
+
+setTitle("兄弟，我的生物群系在哪里？?")
+
+setIcon("naturescompass:naturescompass")
+
+setDescription("你需要寻找黑暗生物群系继续你的旅程.用自然罗盘定位最近的生物群系")
+
+setParent("triumph:stage0/workstump")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("naturescompass:naturescompass")
+
+//Rewards
+setRewardExperience(4)

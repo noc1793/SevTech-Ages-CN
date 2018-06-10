@@ -1,0 +1,15 @@
+setTitle("收集氧气")
+
+setIcon("galacticraftcore:collector")
+
+setDescription("为了制作Galacticraft燃料,你需要将煤油和氧气在Immersive Engineering炼油厂中结合,氧气最初可以由氧气收集器收集.")
+
+setParent("triumph:stage4/compressor")
+setRequiresParent(true)
+
+//Criteria
+criteria = addCriteria("hasRock", "minecraft:inventory_changed")
+criteria.setItem("galacticraftcore:collector")
+
+//Rewards
+setRewardExperience(8)
